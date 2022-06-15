@@ -13,8 +13,9 @@ const Req = (props: ReqProps) => {
 
   return (
     <Stack spacing={2}>
-      <h4> Take {reqInfo.numRequired} of: </h4>
-
+      {
+          reqInfo.numRequired === "x" ? <h4> Finish 21 depth units with previous options plus: </h4> : <h4> Take {reqInfo.numRequired} of: </h4>
+      }
 
       {
           reqInfo.courseOptions.map((courseOption) => {
