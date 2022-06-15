@@ -33,7 +33,7 @@ const Tracks = () => {
               <Tab label="Security" value="3" />
               <Tab label="Theory" value="4" />
               <Tab label="Realworld Computing" value="5" />
-              <Tab label="AI" value="6" />
+              <Tab label="Artificial Intelligence" value="6" />
               <Tab label="Biocomputation" value="7" />
               <Tab label="Information" value="8" />
               <Tab label="Software Theory" value="9" />
