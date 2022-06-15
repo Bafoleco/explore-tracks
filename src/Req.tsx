@@ -21,7 +21,6 @@ const Req = (props: ReqProps) => {
                                           <Typography variant="h6"> Take {reqInfo.numRequired} of: </Typography>
         }
       </div>
-
       {
           reqInfo.courseOptions.map((courseOption) => {
               return <Container> <Course courseInfo={courseOption} /> </Container>
