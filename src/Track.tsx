@@ -1,6 +1,6 @@
 import React from 'react';
 import Req from './Req';
-import { CourseInfo, TrackInfo } from './types';
+import { TrackInfo } from './types';
 import { Stack } from '@mui/material';
 
 interface TrackProps {

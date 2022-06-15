@@ -1,7 +1,7 @@
 import { Container, Stack } from '@mui/material';
 import React from 'react';
 import Course from './Course';
-import { CourseInfo, ReqInfo } from './types';
+import { ReqInfo } from './types';
 
 interface ReqProps {
   reqInfo: ReqInfo;

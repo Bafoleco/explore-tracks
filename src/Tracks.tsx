@@ -1,6 +1,4 @@
 import React from 'react';
-import Req from './Req';
-import { CourseInfo, TrackInfo } from './types';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
