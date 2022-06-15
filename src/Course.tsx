@@ -1,6 +1,6 @@
 import React from 'react';
 import { CourseInfo } from './types';
-import { Card, CardActions, CardContent, CardHeader, Collapse, Typography } from '@mui/material';
+import { Card, CardActions, CardContent, CardHeader, Collapse, Typography, Chip } from '@mui/material';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -35,7 +35,10 @@ const Course = (props: CourseProps) => {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardHeader title={courseInfo.code + " - " + courseInfo.title}/>
+      <CardHeader 
+        title={courseInfo.code + " - " + courseInfo.title}
+        action={<Chip label={`Units ${courseInfo.min_units}-${courseInfo.max_units}`} />}
+      />
       <CardActions disableSpacing>
         <ExpandMore
           expand={expanded}
