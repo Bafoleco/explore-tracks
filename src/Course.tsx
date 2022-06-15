@@ -51,7 +51,7 @@ const Course = (props: CourseProps) => {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>
+          <Typography align='left'  paragraph>
             {courseInfo.description}
           </Typography>
         </CardContent>
