@@ -14,8 +14,8 @@ const Track = (props: TrackProps) => {
   return (
     <Stack direction="row">
       {
-          trackInfo.requirements.map((requirement) => {
-              return <Req reqInfo={requirement} />
+          trackInfo.requirements.map((requirement, index) => {
+              return <Req reqInfo={requirement} letter = {String.fromCharCode(97 + index)}/>
           })
       }
     </Stack>

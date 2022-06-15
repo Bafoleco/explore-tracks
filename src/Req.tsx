@@ -1,21 +1,26 @@
-import { Container, Stack } from '@mui/material';
+import { Container, Stack, Typography } from '@mui/material';
 import React from 'react';
 import Course from './Course';
 import { ReqInfo } from './types';
 
 interface ReqProps {
   reqInfo: ReqInfo;
+  letter: string;
 }
 
 const Req = (props: ReqProps) => {
 
-  const {reqInfo} = props
+  const {reqInfo, letter} = props
 
   return (
     <Stack spacing={2}>
-      {
-          reqInfo.numRequired === "x" ? <h4> Finish 21 depth units with previous options plus: </h4> : <h4> Take {reqInfo.numRequired} of: </h4>
-      }
+      <div>
+        <Typography variant="h5"> Track Requirement ({letter})</Typography>
+        {
+            reqInfo.numRequired === "x" ? <Typography variant="h6"> Take 21 units with previous options plus: </Typography> : 
+                                          <Typography variant="h6"> Take {reqInfo.numRequired} of: </Typography>
+        }
+      </div>
 
       {
           reqInfo.courseOptions.map((courseOption) => {
