@@ -33,11 +33,13 @@ const Course = (props: CourseProps) => {
 
   const {courseInfo} = props
 
+  const units = (courseInfo.min_units === courseInfo.max_units) ? courseInfo.max_units : `${courseInfo.min_units}-${courseInfo.max_units}`
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader 
         title={courseInfo.code + " - " + courseInfo.title}
-        action={<Chip label={`Units ${courseInfo.min_units}-${courseInfo.max_units}`} />}
+        action={<Chip label={`Units ${units}`} />}
       />
       <CardActions disableSpacing>
         <ExpandMore
