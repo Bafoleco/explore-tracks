@@ -26,8 +26,8 @@ const Tracks = () => {
     return (
       <Box sx={{ width: '100%', typography: 'body1' }}>
         <TabContext value={value}>
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
+          <Box sx={{ borderBottom: 1, borderColor: 'divider', width: "100%"}}>
+            <TabList onChange={handleChange} aria-label="lab API tabs example" variant="scrollable" sx={{width: "100%"}}> 
               <Tab label="Systems" value="1" />
               <Tab label="HCI" value="2" />
               <Tab label="Security" value="3" />
