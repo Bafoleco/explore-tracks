@@ -14,6 +14,7 @@ import { ai } from './tracks/ai';
 import { biocomputation } from './tracks/biocomputation';
 import { information } from './tracks/information';
 import { softwaretheory } from './tracks/softwaretheory';
+import { TabsActions } from '@mui/material';
 
 const Tracks = () => {
 
